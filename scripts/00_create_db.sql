@@ -58,7 +58,7 @@ CREATE TABLE gold.fact_sales(
 
 -- Insert data to tables --
 BULK INSERT gold.dim_customers
-FROM 'filepath'
+FROM 'C:\file_path\dim_customers.csv'
 WITH (
 	FIRSTROW = 2,
 	FIELDTERMINATOR = ',',
@@ -66,7 +66,7 @@ WITH (
 );
 
 BULK INSERT gold.dim_products
-FROM 'filepath'
+FROM 'C:\file_path\dim_products.csv'
 WITH (
 	FIRSTROW = 2,
 	FIELDTERMINATOR = ',',
@@ -75,7 +75,7 @@ WITH (
 
 
 BULK INSERT gold.fact_sales
-FROM 'filepath'
+FROM 'C:\file_path\fact_sales.csv'
 WITH (
 	FIRSTROW = 2,
 	FIELDTERMINATOR = ',',
